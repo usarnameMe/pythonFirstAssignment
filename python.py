@@ -3,13 +3,11 @@ def convert_fun(input_value):
         try:
             return int(input_value)
         except ValueError:
-            return "Error: Cannot convert string to integer."
+            return "Oh no, you cannot convert string to integer."
     elif isinstance(input_value, int):
         return str(input_value)
     else:
         return "Error: This type is not supported! Try another one!"
-
-
 
 
 user_input = input("Enter a value: ")
